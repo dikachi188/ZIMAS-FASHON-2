@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Zimma's Atelier</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo-7A.png" alt="Zimma's Atelier Logo" />
+      <span>Zimma's Atelier</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="perfumes.html">Perfumes</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="cart.html" class="cart-link active">🛒 Cart</a>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <main class="cart-container">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <p>Total: ₦<span id="cart-total">0.00</span></p>
+      <button id="checkout-btn">Checkout via WhatsApp</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="images/logo-7A.png" alt="Zimma's Atelier Logo" />
+    <p>ZIMMA'S ATELIER — Fragrance, Fashion & Timeless Elegance</p>
+    <p>&copy; 2025 Zimma's Atelier. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
+

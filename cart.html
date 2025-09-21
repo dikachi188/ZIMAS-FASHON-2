@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Zimma's Atelier</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Header with Navbar -->
+  <header class="header">
+    <div class="logo">Zimma's Atelier</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Collections</a>
+      <a href="perfumes.html">Perfumes</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="cart.html">🛒 Cart</a>
+      <a href="lookbook.html">Lookbook</a>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <main class="cart-container">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+      <p><strong>Total:</strong> ₦<span id="cart-total">0.00</span></p>
+      <button id="checkout-btn">Checkout via WhatsApp</button>
+    </div>
+  </main>
+  <script src="js/cart.js"></script>
+</body>
+</html>

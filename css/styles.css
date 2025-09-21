@@ -1,0 +1,398 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #f5e1c3;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header & Navigation */
+.header, .navbar {
+  background-color: #0f0f0f;
+  color: #f9d084;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f9d084;
+}
+
+.nav a, .nav-links li a {
+  margin: 0 1rem;
+  color: #f5e1c3;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover, .nav-links li a:hover {
+  color: #ffd890;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url('/images/ozioMA.png') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #f9d084;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  background-color: #b8860b;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a06f05;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #b8860b;
+  color: #b8860b;
+}
+
+.btn-outline:hover {
+  background-color: #b8860b;
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  width: 100%;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: #f9d084;
+}
+
+section p {
+  font-size: 1rem;
+  color: #f5e1c3;
+}
+
+/* About */
+.about {
+  background-color: #1a1a1a;
+  border-left: 6px solid #b8860b;
+}
+
+/* Collections */
+.collection-preview {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.collection-preview .item {
+  flex: 1 1 30%;
+  background: #1f1f1f;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #b8860b;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #f5e1c3;
+}
+
+/* Perfume Section */
+.perfume-section {
+  padding: 40px 20px;
+  background-color: #0f0f0f;
+  text-align: center;
+}
+
+.perfume-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  flex: 0 0 auto;
+  width: 200px;
+  background: #1a1a1a;
+  border: 1px solid #b8860b;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #f9d084;
+}
+
+.product p {
+  margin: 0;
+  color: #f5e1c3;
+}
+
+.add-to-cart-btn {
+  margin-top: 10px;
+  background-color: #b8860b;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #a06f05;
+}
+
+/* Cart Page */
+.cart-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  color: #f5e1c3;
+}
+
+.cart-container h2 {
+  margin-bottom: 25px;
+  font-size: 2em;
+  text-align: center;
+  color: #f9d084;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #b8860b;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+}
+
+.cart-summary {
+  text-align: right;
+}
+
+.cart-summary p {
+  font-size: 1.2rem;
+}
+
+#checkout-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #1EBE5D;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #b8860b;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: #f5e1c3;
+}
+
+.contact-form button {
+  align-self: start;
+}
+
+.whatsapp {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #f5e1c3;
+}
+
+.whatsapp a {
+  color: #b8860b;
+}
+
+/* Footer */
+.footer {
+  background-color: #0f0f0f;
+  color: #f5e1c3;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.footer img {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+/* Gallery */
+.gallery-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.gallery-item h3 {
+  margin: 10px 0;
+  color: #f9d084;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #b8860b;
+}
+/*lookbook.html*/
+.lookbook-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #0f0f0f;
+}
+
+.lookbook-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: #f9d084;
+}
+
+.lookbook-section p {
+  font-size: 1rem;
+  color: #f5e1c3;
+  margin-bottom: 2rem;
+}
+
+.lookbook-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.lookbook-item {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.lookbook-item:hover {
+  transform: scale(1.03);
+}
+
+.lookbook-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.lookbook-item h3 {
+  margin-top: 1rem;
+  color: #f9d084;
+}
